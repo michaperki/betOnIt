@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Mike's Playground</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Mike's Playground</h1>
+    </div>
+    <div class="content">
+      <div class="main">
+        <h2>Mike's Playground</h2>
+        <p>Mike's Playground is a place for me to play around with different web technologies. </p>
+        <div id="admin-container">
+          <form id="form" action="submit">
+            <div class="form-inputs">
+            <label for="text-input">Enter a wager:</label>
+            <input id="text-input" type="text">
+            <label for="time-input">Duration:</label>
+            <select id="time-input">
+              <option value="1">10 seconds</option>
+              <option value="2">20 seconds</option>
+              <option value="3">30 seconds</option>
+              <option value="4">40 seconds</option>
+            </div>
+            <div class="control-panel">
+              <input type="submit" value="Submit">
+              <input type="button" id="clear-button" value="Clear">
+            </div>
+          </form>
+          <div id="list"></div>
+        </div>
+        <div class="player-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Player</th>
+                <th>Wager</th>
+                <th>Duration</th>
+                <th>Time Left</th>
+              </tr>
+            </thead>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script src="script.js" type="module"></script>
+  </div>
+</body>
+
+</html>
